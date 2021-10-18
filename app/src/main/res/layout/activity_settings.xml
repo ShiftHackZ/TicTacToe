@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.SettingsActivity">
+
+    <TextView
+        android:id="@+id/titleSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/size"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSize"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:focusable="false"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/titleSize"
+        app:layout_constraintEnd_toStartOf="@+id/btnSizePlus"
+        app:layout_constraintTop_toTopOf="@+id/titleSize"
+        tools:text="3" />
+
+    <TextView
+        android:id="@+id/btnSizePlus"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:background="#FBFBFB"
+        android:gravity="center"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="+"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/titleSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titleSize" />
+
+    <TextView
+        android:id="@+id/btnSizeMinus"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="#FBFBFB"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textStyle="bold"
+        android:text="–"
+        app:layout_constraintBottom_toBottomOf="@+id/etSize"
+        app:layout_constraintEnd_toStartOf="@+id/etSize"
+        app:layout_constraintTop_toTopOf="@+id/etSize" />
+
+    <TextView
+        android:id="@+id/titleCharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/chose"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ticZero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ticZero" />
+
+    <com.dmitriy.moroz.tictactoe.ui.views.TicTacToeCell
+        android:id="@+id/ticCross"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/ticZero"
+        app:layout_constraintTop_toTopOf="@+id/ticZero" />
+
+    <com.dmitriy.moroz.tictactoe.ui.views.TicTacToeCell
+        android:id="@+id/ticZero"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSize" />
+
+    <TextView
+        android:id="@+id/titleRules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:text="@string/rules"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticCross" />
+
+    <TextView
+        android:id="@+id/titleShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:text="@string/share_app"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleRules" />
+
+    <TextView
+        android:id="@+id/titleGooglePlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:text="@string/google_play_page"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleShare" />
+
+    <TextView
+        android:id="@+id/titleDev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:text="@string/dev"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleGooglePlay" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

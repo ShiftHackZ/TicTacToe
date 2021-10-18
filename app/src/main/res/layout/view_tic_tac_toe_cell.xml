@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dmitriy.moroz.tictactoe.ui.views.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_cell"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/coordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:text="[0, 0]"/>
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:src="@drawable/ic_31226" />
+
+    <ImageView
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center"
+        android:text="O"
+        android:src="@drawable/ic_1185616" />
+
+</com.dmitriy.moroz.tictactoe.ui.views.SquareLayout>

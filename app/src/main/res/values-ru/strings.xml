@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Крестики Нолики</string>
+    <string name="title_play">Крестики Нолики | Игра</string>
+    <string name="title_settings">Настройки</string>
+    <string name="wins">Выиграно: %1$s</string>
+    <string name="loses">Проиграно: %1$s</string>
+    <string name="size">Размер поля</string>
+    <string name="chose">Тип игрока</string>
+    <string name="restart">Переиграть</string>
+    <string name="settings">Настройки</string>
+    <string name="step_your">Ваш ход</string>
+    <string name="step_phone">Подождите, Ходит телефон...</string>
+    <string name="draw">Ничья!</string>
+    <string name="won">Вы выиграли!</string>
+    <string name="lose">Вы проиграли!</string>
+    <string name="rules">Правила игры</string>
+    <string name="share_app">Поделиться приложением</string>
+    <string name="google_play_page">Оставьте отзыв в Google Play</string>
+    <string name="dev">Страница разработчика</string>
+    <string name="share_message">Игра Крестики-Нолики для Android! БЕЗ РЕКЛАМЫ! Разные размеры сеток.</string>
+    <string name="full_rules">1. Игра ведется на сетке, которая состоит из Z квадратов на Z квадратов. Значение Z может быть от 2 до 12.\n\n
+2. Вы X, то компьютер O, или наоборот. Игроки по очереди ставят свои отметки на пустых клетках.\n\n
+3. Первый игрок, поставивший Z знаков подряд (вверх, вниз, поперек или по диагонали), становится победителем.\n\n
+4. Когда все поля заполнены, игра окончена. Если ни у одного из игроков нет Z подряд, соответствующим п. 3, то игра заканчивается ничьей.</string>
+</resources>

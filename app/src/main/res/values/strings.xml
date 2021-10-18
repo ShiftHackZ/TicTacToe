@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="title_play">TicTacToe | Play</string>
+    <string name="title_settings">Settings</string>
+    <string name="wins">Wins: %1$s</string>
+    <string name="loses">Loses: %1$s</string>
+    <string name="size">Size of field</string>
+    <string name="chose">Chose your character</string>
+    <string name="draw">"There is draw!"</string>
+    <string name="won">You won!</string>
+    <string name="lose">You lose!</string>
+    <string name="restart">Restart</string>
+    <string name="settings">Settings</string>
+    <string name="step_your">Now it\'s your turn</string>
+    <string name="step_phone">Wait, computer is making turn…</string>
+    <string name="rules">TicTacToe rules</string>
+    <string name="share_app">Share application</string>
+    <string name="google_play_page">Rate app in Google Play</string>
+    <string name="dev">Developer\'s homepage</string>
+    <string name="share_message">TicTacDoe Android game! Different boards, ads free!</string>
+    <string name="full_rules">1. The game is played on a grid that\'s Z squares by Z squares. The Z value can be from 2 to 12.\n\n
+2. You are X, computer is O, or vice versa. Players take turns putting their marks in empty squares.\n\n
+3. The first player to get Z of marks in a row (up, down, across, or diagonally) is the winner.\n\n
+4. When all squares are full, the game is over. If no player has Z marks in a row, the game ends in a draw. </string>
+</resources>
